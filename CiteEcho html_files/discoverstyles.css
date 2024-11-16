@@ -1,0 +1,138 @@
+/* Basic reset for body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles for the nav bar */
+.nav-container {
+    display: flex;
+    justify-content: left; /* Separates logo and links */
+    align-items: center;
+    background-color: #f5f5f5; /* Very light gray background */
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+
+.Echo {
+    align-content: left;
+    margin-right: 60%;
+    margin-top:20px;
+    color: #093249;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.nav-container .logo {
+    padding: 5px, 5px;
+    width: 30px;
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 100px;
+}
+
+    .nav-links a {
+        color: #333; /* Darker gray for better contrast */
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+        .nav-links a:hover {
+            color: #666;
+        }
+
+header nav a {
+    color: #093249;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    header nav a.active {
+        color: #FF5722;
+    }
+
+
+/* Centered search and filter section */
+.search-filter-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#searchBox {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.filters-container select {
+    padding: 8px;
+    margin: 0 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Card container styling */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    background-color: #fff;
+    transition: transform 0.2s ease; /* Subtle zoom effect on hover */
+}
+
+    .card:hover {
+        transform: scale(1.02);
+    }
+
+    .card img,
+    .card iframe {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .card h3 {
+        font-size: 1.2em;
+        margin: 10px 0;
+        color: #333;
+    }
+
+    .card p {
+        font-size: 0.9em;
+        color: #555;
+        margin: 8px 0;
+    }
+
+.collaborators {
+    font-size: 0.85em;
+    color: #777;
+    margin-top: 10px;
+}
+
+.project-link {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    .project-link:hover {
+        color: #004c99;
+    }
